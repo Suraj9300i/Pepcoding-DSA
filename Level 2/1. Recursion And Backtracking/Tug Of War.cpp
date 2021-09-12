@@ -16,7 +16,6 @@ void fastIO(){
 	ios_base::sync_with_stdio(false);cin.tie(NULL);cout.tie(NULL);
 }
 template<class T> void _print(T x){cerr<<x;}
-    
 
 /***************************Jay Shree Ram****************************/
 vi fs1,fs2;
