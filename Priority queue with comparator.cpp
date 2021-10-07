@@ -58,3 +58,26 @@ int main()
     }
     return 0;
 }
+
+
+// Leetcode
+class Node{
+        public:
+        int row,col;
+        TreeNode* treeNode;
+        Node(){}
+        Node(int _row,int _col,TreeNode* _treeNode){
+            row = _row;
+            col = _col;
+            treeNode = _treeNode;
+        }
+         bool operator<(const Node& o)const{
+           
+            if(this->row!=o.row)
+                return this->row>o.row;
+            if(this->col!=o.col)
+                return this->col>o.col;
+            return this->treeNode->val > o.treeNode->val;
+        }
+         
+    };
